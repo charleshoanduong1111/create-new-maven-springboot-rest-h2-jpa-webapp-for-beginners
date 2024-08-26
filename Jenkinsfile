@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean install' // Use 'mvn clean install' if using Maven
+                bat 'mvn clean install' // Use 'mvn clean install' if using Maven
             }
         }
         stage('Test') {
@@ -19,13 +19,13 @@ pipeline {
         }
         stage('Package') {
             steps {
-                sh 'mvn package' // Use 'mvn package' if using Maven
+                bat 'mvn package' // Use 'mvn package' if using Maven
             }
         }
         stage('Deploy') {
             steps {
                 // Add your deployment steps here, e.g., using SCP, SSH, Docker, etc.
-                sh 'scp build/libs/*.jar user@server:/path/to/deploy'
+                bat 'scp build/libs/*.jar user@server:/path/to/deploy'
             }
         }
     }
