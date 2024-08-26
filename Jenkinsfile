@@ -26,6 +26,7 @@ pipeline {
             steps {
                 // Add your deployment steps here, e.g., using SCP, SSH, Docker, etc.
                 // bat 'scp ${env.WORKSPACE}/build/libs/*.jar user@server:/path/to/deploy'
+                echo 'Deploy - TODO'
             }
         }
     }
