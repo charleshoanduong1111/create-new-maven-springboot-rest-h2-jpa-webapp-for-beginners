@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Package') {
             steps {
-                bat 'mvn package -X' // Use 'mvn package' if using Maven
+                bat 'mvn clean package -X' // Use 'mvn package' if using Maven
             }
         }
         stage('Deploy') {
