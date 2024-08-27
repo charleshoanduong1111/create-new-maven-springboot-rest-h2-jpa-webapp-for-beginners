@@ -8,13 +8,13 @@
 		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.fitness</groupId>
+	<groupId>com.springboot-rest-h2-jpa-webapp</groupId>
 	<artifactId>springboot-rest-h2-jpa-webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-rest-h2-jpa-webapp</name>
 	<description>Spring Boot Project with Rest H2 JPA</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
