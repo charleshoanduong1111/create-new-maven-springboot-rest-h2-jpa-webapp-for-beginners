@@ -9,17 +9,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'mvn clean install' // Use 'mvn clean install' if using Maven
+                bat 'mvn clean install -X' // Use 'mvn clean install' if using Maven
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test' // Use 'mvn test' if using Maven
+                sh 'mvn test -X' // Use 'mvn test' if using Maven
             }
         }
         stage('Package') {
             steps {
-                bat 'mvn package' // Use 'mvn package' if using Maven
+                bat 'mvn package -X' // Use 'mvn package' if using Maven
             }
         }
         stage('Deploy') {
