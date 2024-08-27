@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -X' // Use 'mvn test -X' for debug
+                bat 'mvn test -X' // Use 'mvn test -X' for debug
             }
         }
         stage('Package') {
